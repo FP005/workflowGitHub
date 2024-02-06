@@ -1,4 +1,4 @@
-name: helloword
+name: base
 
 on:
   push:
@@ -8,8 +8,10 @@ on:
     branches:
       - main
 
+  workflow_dispatch:
+
 jobs:
-  build:
+  hello:
     runs-on: ubuntu-latest
 
     steps:
